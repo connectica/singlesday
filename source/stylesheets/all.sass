@@ -1,0 +1,85 @@
+@import "flipclock"
+@import "bootstrap"
+
+html
+  height: 100%
+body
+  background: #89bdb9 image-url('images/background.jpg') no-repeat no-repeat fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+  div.clock
+    margin-top: 60px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 60px
+    width: 630px
+    zoom: 0.35
+    -moz-transform: scale(0.35)
+
+  div#main
+    margin-top: 60px
+    margin-bottom: 60px
+    div#message
+      img
+        margin: 0 auto
+
+    div.ball
+      height: 200px
+      width: 200px
+      border-radius: 100px
+      &.luxola
+        background: white image-url('images/luxola.png') no-repeat no-repeat 50% 50%
+      &.moxy
+        background: #ed3e7b image-url('images/moxy.png') no-repeat no-repeat 50% 50%
+      &.pomelo
+        background: black image-url('images/pomelo.png') no-repeat no-repeat 50% 50%
+      &.sanoga
+        background: white image-url('images/sanoga.png') no-repeat no-repeat 50% 50%
+
+    div.lets-shop
+      width: 89px
+      height: 19px
+      position: absolute
+      &.right
+        background: transparent image-url('images/lets-shop-right.png') no-repeat no-repeat
+      &.left
+        background: transparent image-url('images/lets-shop-left.png') no-repeat no-repeat
+
+    div#links
+      position: relative
+      height: 600px
+      div.ball
+        position: absolute
+        &.first
+          left: 90px
+          top: 60px
+          div.lets-shop
+            left: 220px
+            top: 80px
+        &.second
+          left: 320px
+          top: 180px
+          div.lets-shop
+            left: -110px
+            top: 100px
+        &.third
+          left: 30px
+          top: 310px
+          div.lets-shop
+            left: 220px
+            top: 80px
+        &.fourth
+          left: 270px
+          top: 437px
+          div.lets-shop
+            left: -110px
+            top: 100px
+
+    div#links-mobile
+      div.ball 
+        margin: 30px auto 30px auto
+
+

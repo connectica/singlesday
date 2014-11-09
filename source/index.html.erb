@@ -1,0 +1,49 @@
+---
+title: Singles Day 2014!
+---
+
+
+<div id='main' class='container'>
+  <div class='row'>
+    <div class='col-xs-12 col-sm-12 col-md-3' id='message'>
+      <%= image_tag 'message.png', class: 'img-responsive' %>
+      <div class='clock'></div>
+    </div>
+    <div class='col-xs-12 col-sm-12 col-md-6 hidden-xs hidden-sm' id='links'>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball first'>
+          <div class='lets-shop right'></div>
+        </div>
+      <% end %>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball second'>
+          <div class='lets-shop left'></div>
+        </div>
+      <% end %>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball third'>
+          <div class='lets-shop right'></div>
+        </div>
+      <% end %>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball fourth'>
+          <div class='lets-shop left'></div>
+        </div>
+      <% end %>
+    </div>
+    <div class='col-xs-12 hidden-md hidden-lg' id='links-mobile'>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball first'></div>
+      <% end %>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball second'></div>
+      <% end %>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball third'></div>
+      <% end %>
+      <% link_to '#', class: 'shop-link', target: '_blank' do %>
+        <div class='ball fourth'></div>
+      <% end %>
+    </div>
+  </div>
+</div>
