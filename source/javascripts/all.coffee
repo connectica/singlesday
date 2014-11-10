@@ -1,6 +1,7 @@
 #= require jquery
 #= require underscore
 #= require flipclock
+#= require segment
 
 $(document).ready ->
   luxola = 
@@ -21,6 +22,10 @@ $(document).ready ->
 
   shops = [luxola, moxy, pomelo, sanoga]
   randomized = _.shuffle(_.shuffle(shops))
+
+  $('a.shop-link').click (e) ->
+    window.analytics.track 'Clicked Shop',
+      link: $(this).attr('href')
 
   $('#links div.ball').each (index) ->
     $(this).parent().attr('href', randomized[index].link)
