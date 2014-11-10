@@ -17,7 +17,7 @@ $(document).ready ->
 
   sanoga =
     class: 'sanoga'
-    link: 'https://www.sanoga.com/th/singlesday?utm_source=SinglesDayTH&utm_medium=banner&utm_campaign=promo'
+    link: 'http://www.sanoga.com/th/clearance-deals/all-deals/single-day-sale.html?utm_source=SinglesDayTH&utm_medium=banner&utm_campaign=promo'
 
   shops = [luxola, moxy, pomelo, sanoga]
   randomized = _.shuffle(_.shuffle(shops))
